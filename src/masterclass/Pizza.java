@@ -1,6 +1,13 @@
 package masterclass;
 
 public class Pizza {
+    /*
+    Here are some differences between constructors and methods
+    1. A constructor does not have a return type while a method can have a return type.
+    2. A constructor is used to initialize an object while a method is used to perform a function of an object.
+    3. A constructor cannot be inherited by a subclass but a method can.
+     */
+
     int orderNumber;
     String crust;
     String meat;
