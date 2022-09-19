@@ -8,13 +8,17 @@ public class Testing {
 
 
     public static void main(String[] args) {
-        String s1 = "dad";
-        if(s1.equals(reverse(s1))){
-            System.out.println("Palindrome");
-        }
-        else{
-            System.out.println("NOT Palindrome");
-        }
+//        String s1 = "dad";
+//        if(s1.equals(reverse(s1))){
+//            System.out.println("Palindrome");
+//        }
+//        else{
+//            System.out.println("NOT Palindrome");
+//        }
+
+        int myInt = 1234;
+        String s4 = Integer.toString(myInt);
+        System.out.println(s4);
 
 
 

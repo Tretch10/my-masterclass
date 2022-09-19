@@ -3,24 +3,25 @@ package masterclass.practice;
 public class Main {
 
     public static void main(String[] args) {
-
-        String str2 = "Bob";
-        StringBuilder sb = new StringBuilder(str2);
-        // System.out.println(reverse("amazon"));
-    if(str2.equalsIgnoreCase(sb.reverse().toString())){
-            System.out.println("Palindrome");
+        int myInt = 121;
+        if(myInt == reverse(myInt)){
+            System.out.println("Integer palindrome");
         }
         else{
-            System.out.println("NOT Palindrome");
+            System.out.println("NOT Integer palindrome");
         }
+
+
 
     }
 
-    public static String reverse(String input){
-        if(input == null || input.isEmpty()){
-            return input;
-        }
+    public static int reverse(int input){
+        String stringConv = Integer.toString(input);
+        String rev = "";
 
-        return input.charAt(input.length()-1) + input.substring(0,input.length()-1);
+        for(int i=stringConv.length()-1; i>=0; i--){
+            rev+=stringConv.charAt(i);
+        }
+        return Integer.parseInt(rev) ;
     }
 }
