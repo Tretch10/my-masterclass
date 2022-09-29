@@ -1,27 +1,31 @@
 package masterclass.practice;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+
 public class Main {
 
     public static void main(String[] args) {
-        int myInt = 121;
-        if(myInt == reverse(myInt)){
-            System.out.println("Integer palindrome");
-        }
-        else{
-            System.out.println("NOT Integer palindrome");
-        }
+        ArrayList<String> myList = new ArrayList<>();
+
+        LinkedList<String> myLink = new LinkedList<>();
+
+        System.out.println(!checkVowel("qart"));
 
 
 
     }
 
-    public static int reverse(int input){
-        String stringConv = Integer.toString(input);
-        String rev = "";
+//    public static long calculateFactorial(long val){
+//        if(val > 1){
+//            return val * calculateFactorial(val - 1);
+//        }
+//        else{
+//           return 1;
+//        }
+//    }
 
-        for(int i=stringConv.length()-1; i>=0; i--){
-            rev+=stringConv.charAt(i);
-        }
-        return Integer.parseInt(rev) ;
+    public static boolean checkVowel(String s1){
+        return s1.toLowerCase().matches(".*[aeiou].*");
     }
 }
