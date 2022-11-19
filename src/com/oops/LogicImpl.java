@@ -1,6 +1,6 @@
 package com.oops;
 
-public class LogicImpl implements Logic{
+public class LogicImpl implements Logic {
 
 
     @Override
@@ -8,13 +8,21 @@ public class LogicImpl implements Logic{
         return 0;
     }
 
-    @Override
-    public int subtractNumbers(int x, int y) {
-        return 0;
+//    @Override
+//    public int subtractNumbers(int x, int y) {
+//        return 0;
+//    }
+//
+//    @Override
+//    public int multiplyNumbers(int x, int y) {
+//        return 0;
+//    }
+
+
+    public static void main(String[] args) {
+        LogicImpl logic = new LogicImpl();
+
+
     }
 
-    @Override
-    public int multiplyNumbers(int x, int y) {
-        return 0;
-    }
 }

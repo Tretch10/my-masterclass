@@ -12,17 +12,19 @@ public class StreamEmployees extends Employee {
     }
 
     public static void main(String[] args) {
-        List<Employee> sortedList = getEmployees().stream().filter((employee) -> employee.getSalary()>50000).collect(Collectors.toList());
-        sortedList.forEach(System.out::println);
-        System.out.println("================");
-        List<Employee> sortedList1 = getEmployees().stream().sorted(Comparator.comparingInt(Employee::getId)).collect(Collectors.toList());
-        sortedList1.forEach(System.out::println);
-        System.out.println("================");
-        List<Employee> sortedList2 = getEmployees().stream().sorted(Comparator.comparingDouble(Employee::getSalary).reversed())
-                .collect(Collectors.toList());
-        List<Employee> sortedList3 = getEmployees().stream().sorted(Comparator.comparing(Employee::getName).reversed())
-                .collect(Collectors.toList());
+//        List<Employee> sortedList = getEmployees().stream().filter((employee) -> employee.getSalary()>50000).collect(Collectors.toList());
+//        sortedList.forEach(System.out::println);
+//        System.out.println("================");
+//        List<Employee> sortedList1 = getEmployees().stream().sorted(Comparator.comparingInt(Employee::getId)).collect(Collectors.toList());
+//        sortedList1.forEach(System.out::println);
+//        System.out.println("================");
+//        List<Employee> sortedList2 = getEmployees().stream().sorted(Comparator.comparingDouble(Employee::getSalary).reversed())
+//                .collect(Collectors.toList());
+//        List<Employee> sortedList3 = getEmployees().stream().sorted(Comparator.comparing(Employee::getName).reversed())
+//                .collect(Collectors.toList());
         System.out.println("===============");
+        List<Double> updateSalary = getEmployees().stream().map(employee -> employee.getSalary()+1000).collect(Collectors.toList());
+        updateSalary.forEach(System.out::println);
 
 
 

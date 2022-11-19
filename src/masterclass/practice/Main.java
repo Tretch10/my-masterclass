@@ -6,11 +6,16 @@ import java.util.LinkedList;
 public class Main {
 
     public static void main(String[] args) {
-        ArrayList<String> myList = new ArrayList<>();
+//        ArrayList<String> myList = new ArrayList<>();
+//
+//        LinkedList<String> myLink = new LinkedList<>();
+//
+//        System.out.println(!checkVowel("qart"));
 
-        LinkedList<String> myLink = new LinkedList<>();
+        String s1 = "aardvark";
+        StringBuilder s2 = new StringBuilder(s1);
+        System.out.println(s2.indexOf("z"));
 
-        System.out.println(!checkVowel("qart"));
 
 
 
@@ -25,7 +30,7 @@ public class Main {
 //        }
 //    }
 
-    public static boolean checkVowel(String s1){
-        return s1.toLowerCase().matches(".*[aeiou].*");
-    }
+   // public static boolean checkVowel(String s1){
+       // return s1.toLowerCase().matches(".*[aeiou].*");
+  //  }
 }
